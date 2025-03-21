@@ -1,0 +1,38 @@
+<div class="d-flex vh-100">
+  
+  <!-- Sidebar (Left Navbar) -->
+  <nav class="bg-primary text-white p-3 d-flex flex-column" style="width: 250px;">
+    <h4 class="text-center mb-4">Menu</h4>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-white active" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" >Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" >Pricing</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link text-white disabled" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="flex-grow-1 d-flex flex-column">
+    
+    <!-- Header Section -->
+    <header class="bg-light p-3 border-bottom">
+      <h1 class="text-primary">Welcome to Host Application</h1>
+    </header>
+    <router-outlet></router-outlet>
+    <!-- Microfrontend Render Area -->
+    <div class="p-4" id="microfrontend-container">
+      <!-- Microfrontend content will render here -->
+      <p class="text-muted">This area will load your microfrontend application dynamically.</p>
+    </div>
+
+  </div>
+
+</div>
